@@ -1,0 +1,140 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+
+
+.t{
+    text-align: center;
+    text-justify: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+.right{
+    width: 200px;
+    height: 100px;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+.p{
+    font-size: 43px;
+    font-weight: muted;
+    text-align: center;
+}
+.z{
+    font-size: 20px;
+    font-weight: muted;
+    text-align: center;
+    margin-bottom: 30px;
+}
+input[type="text"]{
+    border: 2px solid red;
+   
+    border-radius: 10px;
+    margin-top: 5px;
+
+}
+.tz{
+    font-size: 20px;
+    font-weight: muted;
+    margin-left: 390px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    
+    
+    
+}
+.mn{
+    margin-right: 90px;
+    border-radius: 5px;
+    font-size: 30px;
+    justify-content: center;
+    
+    
+}
+.mk{
+    margin-left: 20px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+   
+    font-size: 20px;
+    justify-content: center;
+    padding-right: 10px;
+    
+    
+}
+.mk1{
+    margin-left: 50px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    justify-content: center;
+    
+    
+}
+
+.rad {
+    margin-right: 20px;
+}
+.mk:hover {
+    background: linear-gradient(#e72309, #eb190a);
+    color: black
+    }
+.mk:focus {
+    background: linear-gradient(#e72309, #eb190a);
+    color: black
+    }
+.button-selected {
+    border: 4px solid red;
+}
+
+.ck{
+    margin-top: 50px;
+   
+}
+
+progress{
+    margin-top: 50px;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+.select{
+    margin-bottom: 5px;
+    text-align: center;
+    
+}
+
+
+  
+.j{
+    
+        font-size: 43px;
+        font-weight: muted;
+        text-align: center;
+        margin-bottom: 20px;
+
+}
+
+.mk2:hover {
+    background: linear-gradient(#e72309, #eb190a);
+    color: black
+    }
+.mk2:focus {
+    background: linear-gradient(#e72309, #eb190a);
+    color: black
+    }
+.button-selected {
+    border: 4px solid red;
+}
+.mk2
+{
+    margin-left: 70px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+   
+    font-size: 20px;
+    justify-content: center;
+    padding-right: 10px;
+    
+    
+}

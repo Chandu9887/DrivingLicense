@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">    
+<title>Driving LICENCE</title>
+
+<link rel="icon" type="image/x-icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PEBAOEQ8QDxAVEA8QDxAQFRAPEA8QFhcWFhURFhUYHSggGBolHRUVITEhKCkrLi4uGB8zODMtNygtLisBCgoKDg0OGxAQGi8lICY3Ly0rMistLSstKystKy0tLS8tLS0tLS8tLS0tKy0tKy0tKy0tLS0tLS0tLS0tLS0tLf/AABEIAO8A0wMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABgcBBAUCA//EAEgQAAEDAgIDCQ8CBAQHAQAAAAEAAgMEEQUSBiExBxMyQVFhcZKxFBUWIjRTVHJzgZGhwcLRQlIjJDNiQ4Kys2ODhMPh4/E1/8QAGwEAAgMBAQEAAAAAAAAAAAAAAAUDBAYBAgf/xAA9EQABAgMDBgoKAgIDAAAAAAABAAIDBBEFITESQVFhcYEGExQyMzSRobHBFiJSU2JyorLR4SPwktI1QoL/2gAMAwEAAhEDEQA/ALxREQhEREIRERCEREQhEREIREUW0t0pFGBHFlfOeI6xGOUjl5l5e8MFSppeXiR4ghwxUlSGqq4oheSRkY4i9wbf4rnP0ooQbd0s91yPiqhrq6Wd2eWRzzyuN7dA4lr3VJ04cwWng8G4eT/I8k6qU71edJiUE39KaOTVezXAut0bVuKgo5C0hzXFrhsIJBHvCnuiWmhcW09URyMmOrXxB1+1SQ5oONHXKlO2C+E0vgnKAxGf9qwERFbWfRERCEREQhEREIRERCEREQhEREIRERCEREQhEREIRERCFzscxBtNBJOdZaDlHK88EfFUtWVT5nule4uc43JPKpzun4gbw0wNhYyPF9R1kNBHuJUAS2aflPpoW1sGUEOX404u8Bh337KIiIqyeosgrCLiFaugeNmphMb3ZpYza/G6PVY/RStVFoHWb1WRjXleDEel2z5hW6mks/KZfiFg7alRAmTkigdePOm/xRERWEpRERCEREQhEREIRERCEREQhEREIRERCEREQhEREIVUbosl61w5I4x8r/VRZSndFjy1rja2aOMjn1W+iiyURee7avo1nU5LDp7I8EREUauIiIhC3sEflqYD/wAaL/UFeSo3AWF9VTtGsmaLZr2OBV5K9J/9tyyfCTnw9h8UREV1ZlEREIRERCEREQhEREIREUG3Tqp7I6drHObmdIXZSRewbbWOkrxEfkNLlZk5YzMZsIGlc+wVU4ul1RIxGcf4snXd+VnvlP56Xru/Kq8s+HvT70bd736f2r1ul1RXfKfz0vXd+U75T+el67vyjlnw9656Nu979P7V63S6orvjP56Xru/Kd8p/PS9d35Ryz4e9Ho273v0/tXrdLqiu+U/npeu78ryK2bWd9k5zmdr+aOWfD3ro4Nu979P7U93TMOzMjqR+k72/1TctPx7VXStrAWPrMPayoBu5pju4WJaOC/Xx7NfMqyxnDX0sz4X/AKSbHZdvE4KKYbeHjAq/Y0ejXSrjVzCRtFc2w+IWkiIqyeIiL3DG57g1rS5xNg0ayTyIRVSbc8w0zVQlPBiGc87jqaO0+5WsophlMzCaF0jx/EIDnDlkIs1g6Pyq3nxSoe4udNJcknhOA169l1da/iGAEXm8rKxZV1qx3xGOoxtGg0rWmOjP3UV53S6onvhP52Tru/Kd8J/Oydd35Ry34e9c9Gj736f2r2ul1RPfCfzsnXd+U7vn87J13flHLfh70ejR979P7V7XS6onu+fzsnXd+U7vn87J13/ld5Z8Pej0ad736f2r2usqiBXzedk67/yrg0Wmc+jp3OJJ3sXJ2m2pSwZjjDSiX2jZJk4Yfl1qaYU8yuuiIrCUIoFuq8Gl9ab7FPVAt1Xg0vrTfYoJnoymtideZv8AtKrxZWFlK1vVhERCERZXUwDApq2TIwWaCN8kPBaD2nmXQCTQLxEiNhtL3mgGJK0KWkkleI42F7jqAbrJVj6N6ERw2lqAJZNRDNrGnn/d2LuYFgUFGzLG0Fx4ch4Tj9BzLrq/ClgL3XrH2jbb4tYcD1W6c5/A79OheQLahs4guVj2BQ1jMrxleOBIOE38jmXXRWnAOFCkcKI+E8PYaEKncY0Tq6ck5DJHfU+Pxh77awuKYXg2LXA8hBBV1VOOUkT97fPG1/G0nZ08i9d20h177TE8ueK6pOlmE3OWmhW7MNaONg11ior3HuVQUGBVU7g2OF55yMrRzlx1KyNGtGIqIGV7g+W2t5sGRjjDfytuv0nooQbzseR+iMiQ392xV7pFpZNWeIP4UNz4rb3dyZjxrlIUG+uUV7L560RkZPFw85vqdV+OwUGkr7acaQ91vEUZ/gRk6/OP43dHIouiKo9xcalaCXgMgQxDYLgiIi4pkXpeUQhekWEQuIFc+iXkVN7P6lUuFc+iPkVN7P6lW5PnnYkHCPq7Pm8iuyiImCxqKBbqvBpfWm+xT1QLdV4NL6032KCZ6MprYnXmb/tKrxEWUrW9WERZY0kgAXJIAHKTsCELoYFhElZKI2Dne47Gt4yrfwnC4qSMRRNsNrjxvdykrS0UwUUcAaQN9d40rtpv+2/IF3Uzl4OQKnFYW1rSMy/IYfUGGvWfLVrRERWEnRcDSzHhRw3bYyvOWNp4tR8cjkFl3iqW0nxU1dTJJ+kHLGORg4Px2qvMRcht2JTax5ETUar+a2869A3+AXMkkLiXOJLibknWSeVebnlWEStb0EhCURF1CIiyhcWEREIRERCF6RYWULiwFc2iPkVN7P6lUyFc2iPkVN7P6lWpPnnYs/wj6u35vIrsoiJiscigW6rwaX1pvsU9UC3VeDS+tN9igmejKa2J15m/7Sq8WVhErW9RSfc+oBNVh7hcRtMlucEAfMqMKxdy6Fu9zyfrztYeZoFx8yfgpYDcqIAl1rRTCk4jhop2mngVO0RE2Xz5EREIXN0geW0tQ4GxEMlj7iqSdtV26RMLqSpAFyYZLD3EqknbUvnOcFsODdOIft8lhERVFokREQhEREIRERCEXpeVlCCiyiIXECuXRHyKm9n9SqZCubRHyKm9n9SrcnzzsWf4R9Xb83kV2UREwWORQLdV4NL6032KeqBbqvBpfWm+xQTPRlNbE68zf9pVeLKwspWt6sKfblkw/mYydZ3t7Ry2zBx/0qArr6LYl3LVRyk2ZfK/1Dt/KkhPyHglUrRgOjyz4bcSLtoIPfSiulF4Y8EAg3BFweUL2m6+dIiIhC8uaCCDrBGvoVKaQ4W6lqJIjsvdh/cw7CrtUf0twAVsXi5RMzXG48f9hPIVXmIRe27EJvY8+JWNR/Ndjq0H86iqfWV6nhcxxY9pa4GxaRYgrwli3eKIiIQiIiEIiIhCL0vK9IQUREQuLAVzaI+RU3s/qVTIVzaI+RU3s/qVak+ediz/AAj6u35vIrsoiJiscigW6rwaX1pvsU9UC3VeDS+tN9igmejKa2J15m/7Sq8RFlK1vVhAURC6rS0Ex1s8Qp3k77G2wvsewbCOcKXKh8PrHwSMljcWlpBFtV+UHmKuHR/HIqyPO0gPH9SO+th+o50xlo2UMk4+KxVtWaYLzGhj1TjqP4Obs0LroiK0kKIiIQo/pNozFWtvqZMBZsgG3+13KFWOM4LPSPyys1bQ9tyx3QVdy16uljmYY5GB7CNbSAVXiy7X3i4pvZ9sRZUBjvWZozjYfLBUOisfGNAI33fTvyO/ZJrYehw1j5qEYlglTTOtLE4D9wBcw/5hqVB8J7OcFrpW0ZeZ6N1+g3Hs8xULnohCKNXkREQuIvS8rKEFZREQuLAVzaI+RU3s/qVTIVzaI+RU3s/qVak+ediz/CPq7fm8iuyiImKxyKBbqvBpfWm+xT1QLdV4NL6032KCZ6MprYnXmb/tKrxZWEStb1EREIRbeFYlLTSNlicWkHWNdnD9pHGFqIgGi8uaHDJcKg4q59H8fhrGAtIbIBd8RPjN4r84XZVDUVbJA8SRPLHDYR9eUKzNGtMoqgCOYiKbZc2DHnm5DzJjBmQ652KxtpWK+DWJBFW6M4/I19ulS1ERWkhRERCEXh7A4EEAg6iDsIXtEIUcxTQ6jnud73l3LFZo6uxRmv3O5G3MMzXgDU14LXHmuNSslFC6XhuzJjAtabg3NfUaDf4396pmr0WrowSYHkDaW+P2LkOjLTrBbygggj3K/VoV2FU9QLSwxv8A7iBmHQ7aoHSfsntTaBwjNaRof+P4NfEKjllWLjGgEbgXU7yx3EyQ3aeYOGsKC4lhc9M7JLG5p4ieC7oOwqq+E9nOCfStoS810Tr9BuPZn3VWqiwsqNXECuXRHyKm9n9SqZCubRHyKm9n9SrUnzzsWf4R9Xb83kV2URExWORQLdV4NL6032KeqBbqvBpfWm+xQTPRlNbE68zf9pVeLKyiVreVXlF6RC7VYWF6RC5VeV6BREIqpZo1ppJTgRT5pYr8Im8jB0naOZWNhuIw1LN8heHt47bQeQjiVGrZoMQlp3iSJ7mEcmw8xHGFZhTLm3G8JJP2JCmKvh+q7uO0Zto7Cr1RQnAdO45PEqQIneKGvbcsdyk/t4lMYpWvaHtIc0i4I1gjlV9kRrx6pWSmZSNLOyYraaNB2H+619URF7VZEREIRERCEWpiFDFUMMUrA9p4jxHlB4ittEYrrXFpBBoQqe0q0dfRSZh40LicjuT+13OuErxxXD2VML4X2s4EA7cruJw5wqWxKidBLJC/hMcWk8R5D70smIPFmowK3FkWiZqGWv57cdY0/lawVz6JeRU3sh2lUwFc+iXkVN7MdpXqT552Kvwj6uz5vIrsIiJiscih+6BhE9U2DeWZywyFwBAIvltt6CpgoRiWnvc88kBpc5Y9zM2+WBtx2yGyhjlgbR5pVMbLZMGPly7QS2+8gC+7ORpUS8Ea/wBHd8vys+CNd6O/5KaaO6Zd2Tin7n3u7Xuzb5ntl4rZB2ra0p0o7gfG3ed9zte6+fJaxAtbKb7VW4qCW5WUaf3UnhtG0RGEAwm5ZFaVzX58qmbSoD4I13o7/kngjXejv+SlmGaed0TRwClyZ3tZm3y4bfVe2QXU3XWS8J4q0n+7lHM2vPSzg2LDaK3jP4OKpzwRrvR3/JPBGu9Hf8lcaL3yNmkqt6RzHsN7D+VTngjXejv+SeCNd6O/5K40RyNmko9I5j2G9h/KpzwRrvR3/JPBGu9Hf8lZWOaQ09GP4jszyLtjZYvI5eYc6jLt0htzalJbxEyZSRzgMNvionwoLDQuP93K9L2haUw3KhwWkacOyrhVRvwRr/R3fL8rs4HQYxC+NgztjzNuHuLo2tuLm19QtxBbbd0i5A7jO0f4v/rU/XuFChuNWON27yUE/aE7BaGzEJlHVpWjsKfEcKjFERFdWYRERCEREQhEREIRQLT3RuWeRtRAzOS0Mka3hXGx3Pq7FPUXiJDD20KtSc2+ViiIzZfnBVNDRWv9Hf8AD/yrSwCldDTQxPsHtYA4DWAV00UcKA2Gagq1P2rFnGBj2gAGt1fMlERFOlaKldKvLar20narqVK6VeW1XtpO1U5zALScG+libPNdLc58ub7OXsC6W6p/Up/Uf2rm7nPlzfZy9gXS3VP6lP6j+1Qt6udqYRP+Yh/KfByi2jk7Y6qnke4NY2VjnOOxoBGtW7S4vTStkfHKyQMbmky67CxP2lUmproD5NiXsW/6ZkS0QtdkjP8AhdtqRZFh8cSatoNV7gD4qTeGtB513UcnhrQeePUd+FUZBudRWUCcial13ByUBxd2j/VW34aUHnj1HfhdfDMQjqYxLGSWkkAkFt7bdSpvAsMdVzshby+Mf2sHCd8FdVNA2NjY2izWgNaOQBWZeI+JUnBI7XkpaUDWw65RvvNaDZQY5tipTHq91RUSynaXusORo1Nb8AtalpXynJGx0jv2sBc74BeZ+G71ndq28Ixiajc6SJwaXNyuzAOBG3YehLheb1snNLIdIQFQKAG4XaToovrHgFZcfytRtH+FJ+FdirDC9Mq6Wogic6Oz5YmO8QDxXPaD8ipjpdjPcdOXttvjjkjvsB43e4K7LljQ5wJ3rL2uyajxYUJ7WgmtKEnGmNQKUotvE8bpqYXlla0nY0a39OUa7LjeH1Fe1ptu3I23TwlV88znuc9zi4uJLidZJ5Shhfa+Vwb+6xy/HYo3Tbyblfg8HpZrf5CSdtBuCurC8Zp6kfwpWuI2t2PH+XatyeUMa57tTWtc5x5gLlUTTzuic2Rji1zSHAjUQQrZw/FO68OklOp+8zMktqGcMNyPkVPBmMuoOKUWjY4li1zDVhIF+Ir41GfTdRPDWg867qOTw1oPPO6jvwqlcDc6lhVxORNSdO4OSgOLu0f6q2/DWg867qO/C6lDicU0W/sJMdnayC24btIBVPYFhjqueOFuy4zn9rBwnfBXFUQNjp3xtFmthe1o5AGlWYEV76k4JJasjLSpYyGTlHGpwHYLycNi5XhrQedd1HLo0OLwzQuqGEmNufMSCCMoudSpJysnRD/8qo/6n/bCjgzD3uoaYK5aVjS8tDymF1coC8g3HcF0/DWg867qOXWwzEYqqMTROLmEkAkEaxt1FUadqtjc88hZ7STtC7LzDnuoV4teyIEpA4yGTWoF5BxrqGhSdERXFm0VK6VeW1XtpO1XUqW0pH87Ve2k7VTnMAtJwb6WJs810dzny5vs5ewLp7qcZzUz7eLlkbfnuDZczc5H8832cvYFPtJ8GbWwGK4Dwc0bjY2dydBXiEwvgEBWJ6YbL2pDiPwpQ6q5Qruqqiw2SNksbpGZ4w9pe0/qZfWFb+CxUJa80rYcrg0SiO2sWNg4e8/NVFX4fNA8xyxuYf7hYO5wdhCm+5Xsqv8Akf8AcXiWdkvyafkXKzbcARJUx2vNG0wPquq4aLrq3Fd/H20tLTyTdz0+YC0YMcet54I2KoHEnWdZ2npUo3QcX7onETHXiiu022Ok/Uee1rf/AFRaxXiYeHOoMAp7HlHwYGU+uU681zDMOy/epxoNWUNJG6SSdomfqLbOORg2C9tp2/BTbDMZp6kuEMokLQC6wOq+zb0KkbFT3cr4VT0R9rlNLxzUMoKKjbFls4uJNFzsq7RTECmGYKCz8N3rO7V1tG6ehk3zuyV8QAbveXVmOvNc2PN8Vv6aaOvp5XzMaXQvc54LQTvZOstdbYNtiouWnkVYgsdRwTtj2zcHKhuIBztxGrywU7pKTBI5I5GVchex7HNubjM1wIv4nKF73Uwf5U2Nv4wJ4rnIQOmwKgkQ8YdI7VcmkmDtrIXRamuBzRuI4L/wdisQ/wCRjmgAYYbUlnKSU3AixHucPWByqGgoBdQD2q58FUGHOYJojILxiRhkA42BwzD4XVzCppZ2iMSQvY8FrWBzDmBB1BvRdU1iNBLTyGKRjmOHEb2I5WnjHOuroLfu+Dpf/tuUcCKWHJpjcrVqyLZqFxwdTJBcKUIN1fLELiTCznAbASB8VY+5mwGkmaRcGYgg6wQWNuLKuJx4zvWd2qydzDyeb2/2NRLdKP7mXq3a8icdbfFdTSBtLS08k3c9PmAtGDHHreeCNiqBxvrOs8fSpRugYv3RPvLDeKLxdWx0n6j7rWUWsVyYeHOoMAvVjyj4MvlPrlOv2DMOy/epxoNW0NJG6SSdomfcZfGO9sGwXttO34KXMxinqYpxDIJC2J5dYEWuDbaqasVONzBgd3U07C1oPQbhSwIxqGUFFRtezWNY+aLnFwoc1MQNCgzlPNF8Tp48MnjfKxjyJ7MJAcc0YDbDjuonj2EyUkzonNNrksd+lzOIgrQaxx1AEnkGsquxxhu14JxMwYc7CF/qkhwIWDtKtjc88hZ7STtCqdWxueeQs9pJ2hSynSbkv4RGsp/6Hg5SdERM1iEXNlwWlc4vdTxOcTcktBJPKV0kXCAcV7Y9zDVpI2Gi0KfCaeJwkjgjY4AgOY0A2O1b6IgADBcc9zzVxqda+M0DHjK9jXjkeA4fNfGjw+GHMYomRZrZsgDc1r2v8T8VuIigrVAc4Nya3aMy5neGj9Fh6jU7w0fosPUaumi88WzQpeVR/bd2lczvDR+iw9Rq+9Hh8MNzFEyMutmyANvbZdbiLoY0YBeXR4rhRziRrJXlwB1HWNhB41oSYLSON3U0JPLvbPwuii6QDivDIj2c0kbLlzO8NH6LD1GrpoiA0DALr4r389xO01WtV0cUotJGyQcWcB1viufSaOUcUjZo4Qx7SS1wLtVwQePkJXZRcyQTUhemx4rWlrXEA4gE07FzTgVGdfc0PUavvR0UUIIijZGCbkMAFzsuttEBrRgFx8aI8Uc4kayVze8NH6ND1GrHeGj9Fh6jV00XOLZoXvlUf23dpXM7w0fosPUavvR4fDDcxRMjvbNkAbe2y63EXQxowC8ujxXCjnEjWSuJpDidNBkZUszMfnAJaHtBAF7g9Kh2kOkNG2J8NHE1rpBlle1jWfw+No49a7G6Nhss8UT4xcRmQv1taQCBr1nXsKrmkpnzPETG3eb6rgX49p1KlMRHBxbTuvWnseSgOgNjFxqK1GV6tQTQkbKYr5gXKubRfD+5qWKIizrZnj+521R/RjQoQubNUFr3CxZGPGa137nE7SpwpJaCW+s5VLbtKHHpBhGoBqTmJwu2X36diIiK2s8v/9k=">
+   
+</head>
+<body>
+    <img size="50"src="https://nebula.wsimg.com/0edb2dd9e19abe3982f3bd7f99d5ea4b?AccessKeyId=D1A6AE6C2626017F30AB&disposition=0&alloworigin=1" alt="" class="right"></div>
+    <div class="container">
+    <h1 class="t">DRIVING LICENSE RENEWAL</h1>
+    <h3 class="p">Lets get started</h3>
+    <h6 class="z">Add your details (As per your Registered record)</h6>
+<div align="center">
+    <div class="select">
+        <select id="ddlYears" style="width:350px;" required >
+            <option value="2000" >Issued Year Of License*</option>
+      
+        </select>
+    </div>
+</br>
+<div class="select">
+    <select id="year" name="year" style="width:350px;" required >
+        <option>Expiring Year Of License*</option>
+        <option value="1950">1950</option>
+        <option value="1951">1951</option>
+        <option value="1952">1952</option>
+        <option value="1953">1953</option>
+        <option value="1954">1954</option>
+        <option value="1955">1955</option>
+        <option value="1956">1956</option>
+        <option value="1957">1957</option>
+        <option value="1958">1958</option>
+        <option value="1959">1959</option>
+        <option value="1960">1960</option>
+        <option value="1961">1961</option>
+        <option value="1962">1962</option>
+        <option value="1963">1963</option>
+        <option value="1964">1964</option>
+        <option value="1965">1965</option>
+        <option value="1966">1966</option>
+        <option value="1967">1967</option>
+        <option value="1968">1968</option>
+        <option value="1969">1969</option>
+        <option value="1970">1970</option>
+        <option value="1971">1971</option>
+        <option value="1972">1972</option>
+        <option value="1973">1973</option>
+        <option value="1974">1974</option>
+        <option value="1975">1975</option>
+        <option value="1976">1976</option>
+        <option value="1977">1977</option>
+        <option value="1978">1978</option>
+        <option value="1979">1979</option>
+        <option value="1980">1980</option>
+        <option value="1981">1981</option>
+        <option value="1982">1982</option>
+        <option value="1983">1983</option>
+        <option value="1984">1984</option>
+        <option value="1985">1985</option>
+        <option value="1986">1986</option>
+        <option value="1987">1987</option>
+        <option value="1988">1988</option>
+        <option value="1989">1989</option>
+        <option value="1990">1990</option>
+        <option value="1991">1991</option>
+        <option value="1992">1992</option>
+        <option value="1993">1993</option>
+        <option value="1994">1994</option>
+        <option value="1995">1995</option>
+        <option value="1996">1996</option>
+        <option value="1997">1997</option>
+        <option value="1998">1998</option>
+        <option value="1999">1999</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+        <option value="2007">2007</option>
+        <option value="2008">2008</option>
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+    </select>
+</div>
+    
+    
+</br>
+    <div class="select">
+        
+        <select name="state" id="state" class="form-control" style="width:350px;" required>
+            <option>issued place Of D.l*</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+            <option value="Daman and Diu">Daman and Diu</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Puducherry">Puducherry</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+            </select>
+        
+    </div>
+    
+</div>
+
+<div align="center" >
+    <a href="page3.html">
+<button class="btn btn-large btn-danger rounded-pill ck" style="width:150px;" >Next-></button></a>
+</div>
+
+<progress class="progress is-danger" style="height: 3px ; width:80% ;" value="50" max="100">90%</progress>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
